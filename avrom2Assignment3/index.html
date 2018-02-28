@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- index.html designed to display a form, calling calculate.php on click of the submit button -->
+<!-- Created by Andrew Vroman on 02/09/2018 for Assignment 3 in 18SP - Web Development and Programming -->
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 3</title>
+        <style>
+                h1 {
+                    text-align: center;
+                    color: white;
+                    background-color: #8B8B8B;
+                }
+    
+                form {
+                    background-color: #E2DFD8;
+                }
+    
+            </style>
+    </head>
+    <body>
+        <h1>Volume Calculator</h1>
+        <!-- Begin Form Layout -->
+        <form action="calculate.php" method="post">
+            <table>
+                <tr>
+                    <td><strong>Calculate the Volume of a Rectangle</strong></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Width:</strong></td>
+                    <td align:"left"><input type="text" name="r_width" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Length:</strong></td>
+                    <td align:"left"><input type="text" name="r_len" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Height:</strong></td>
+                    <td align:"left"><input type="text" name="r_height" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Calculate the Volume of a Cone</strong></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Radius:</strong></td>
+                    <td alight:"left"><input type="text" name="c_rad" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Height:</strong></td>
+                    <td align:"left"><input type="text" name="c_height" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <!-- Calculate button -->
+                <tr>
+                    <td><input type="submit" name="calc" value="Calculate"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

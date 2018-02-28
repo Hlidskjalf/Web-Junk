@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- index.html designed to display a form, calling assignment2.php on click of the submit button -->
+<!-- Created by Andrew Vroman on 01/31/2018 for Assignment 2 in 18SP - Web Development and Programming -->
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <style>
+                h1 {
+                    text-align: center;
+                    color: white;
+                    background-color: blue;
+                }
+    
+                form {
+                    background-color: #E2DFD8;
+                }
+    
+            </style>
+    </head>
+    <!-- Body -->
+    <body>
+        <h1>New Customer Information</h1>
+        <!-- Begin Form layout -->
+        <form action="assignment2.php" method="post">
+            <!-- Text fields -->
+        <table>
+            <tr>
+                <td>Input Customer Information</td>
+            </tr>
+            <tr>
+                <td align:"right">Name:</td>
+                <td align:"left"><input type="text" name="name" size="30" required></td>
+            </tr>
+            <tr>
+                <td align:"right">Address:</td>
+                <td align:"left"><input type="text" name="address" size="30" required></td>
+            </tr>
+            <tr>
+                <td align:"right">City:</td>
+                <td align:"left"><input type="text" name="city" size="30" required></td>
+            </tr>
+            <tr>
+                <td align:"right">State:</td>
+                <td align:"left"><input type="text" name="state" size="30" required></td>
+            </tr>
+            <tr>
+                <td align:"right">Zip Code:</td>
+                <td align:"left"><input type="text" name="zip" size="30" required></td>
+            </tr>
+            <tr>
+                <td align:"right">Email:</td>
+                <td align:"left"><input type="text" name="email" size="30" required></td>
+            </tr>
+            <!-- Radio Btns -->
+            <tr>
+                <td>Customer Type: 
+                <input type="radio" name="response" value="Standard" required>Standard
+                <input type="radio" name="response" value="Premier" required>Premier
+                <input type="radio" name="response" value="Employee" required>Employee
+                </td>
+            </tr>
+            </table>
+            <!-- Text Area -->
+            <table>
+            <tr>
+                <td>
+                <p>Notes:</p>
+                <textarea name="notes" id="note" cols="70" rows="10" required></textarea>
+                </td>
+            </tr>
+            <!-- Submit Btn -->
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
